@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Drmtm(models.Model):
+    id=models.AutoField(primary_key=True)
     name=models.CharField(max_length=150)
     position=models.CharField(max_length=150)
     age=models.IntegerField()
