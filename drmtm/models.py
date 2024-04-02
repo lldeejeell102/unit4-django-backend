@@ -6,4 +6,4 @@ class Drmtm(models.Model):
     position=models.CharField(max_length=150)
     age=models.IntegerField()
     height=models.IntegerField()
-    salary=models.IntegerField()
+    salary=models.DecimalField(max_digits=5, decimal_places=2)
