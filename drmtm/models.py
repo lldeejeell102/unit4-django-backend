@@ -7,3 +7,6 @@ class Drmtm(models.Model):
     age=models.IntegerField()
     height=models.IntegerField()
     salary=models.DecimalField(max_digits=5, decimal_places=2)
+    
+    def __str__(self):
+        return self.name
